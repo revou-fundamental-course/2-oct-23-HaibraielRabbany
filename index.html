@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Temperature Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator Suhu</h1>
+        <form id="temperatureForm">
+            <label for="temperatureInput">Masukkan Suhu:</label>
+            <input type="number" id="temperatureInput" required>
+            <label for="scale">Choose Scale:</label>
+            <select id="scale">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+            <button type="button" onclick="convertTemperature()">Konversi</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
